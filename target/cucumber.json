@@ -1,0 +1,406 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-27T18:53:10.731Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3152117178,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.startBrowser(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Add remove elements http://the-internet.herokuapp.com/add_remove_elements/",
+        "description": "",
+        "id": "addremoveelements;add-remove-elements-http://the-internet.herokuapp.com/add-remove-elements/",
+        "after": [
+          {
+            "result": {
+              "duration": 606061499,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1562802867,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add Remove elements page",
+            "match": {
+              "location": "AddRemoveElements.add_Remove_elements_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c10\u003e but was:\u003c11\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat bindings.AddRemoveElements.i_click_on_Add_element_btn(AddRemoveElements.java:51)\r\n\tat ✽.I click on Add element btn(file:src/test/java/features/AddRemoveElements.feature:6)\r\n",
+              "duration": 371149943,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I click on Add element btn",
+            "match": {
+              "location": "AddRemoveElements.i_click_on_Add_element_btn()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 358880,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Element should be added and Delete btn should be seen",
+            "match": {
+              "location": "AddRemoveElements.element_should_be_added_and_Delete_btn_should_be_seen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 329085,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I click Delete btn 10 times",
+            "match": {
+              "location": "AddRemoveElements.i_click_Delete_btn()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 445290,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Btns should be removed",
+            "match": {
+              "location": "AddRemoveElements.btn_should_be_removed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddRemoveElements"
+          }
+        ]
+      }
+    ],
+    "name": "AddRemoveElements",
+    "description": "",
+    "id": "addremoveelements",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/AddRemoveElements.feature",
+    "tags": [
+      {
+        "name": "@AddRemoveElements",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-27T18:53:16.444Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2485141733,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.startBrowser(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "CheckBoxes",
+        "description": "",
+        "id": "checkboxes;checkboxes",
+        "after": [
+          {
+            "result": {
+              "duration": 603548014,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1434104605,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The checkboxes page",
+            "match": {
+              "location": "Checkboxes.go_to_checkbox_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 69944881,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click checkbox1",
+            "match": {
+              "location": "Checkboxes.and_click_checkbox1()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19203398,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "it should be selected",
+            "match": {
+              "location": "Checkboxes.it_should_be_selected()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59399299,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click checkbox2",
+            "match": {
+              "location": "Checkboxes.i_click_checkbox_2()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18384662,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "It should be deselected",
+            "match": {
+              "location": "Checkboxes.it_should_be_deselected()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "CheckBoxes",
+    "description": "",
+    "id": "checkboxes",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/CheckBoxes.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-27T18:53:21.139Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2481075197,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.startBrowser(Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": ": Login form using valid and invalid credentials",
+        "description": "",
+        "id": "form-authentication;:-login-form-using-valid-and-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 591110367,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1579810939,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "That I go to form authentication",
+            "match": {
+              "location": "FormAuthentication.go_to_auth_form()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 590710434,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter username \"wrongUsername\" and \"wrongPassword\" and press Submit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wrongUsername\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"wrongPassword\"",
+                  "offset": 37
+                }
+              ],
+              "location": "FormAuthentication.enter_invalid_username_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11824836,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should get correct \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"false\"",
+                  "offset": 21
+                }
+              ],
+              "location": "FormAuthentication.check_if_user_not_logged_in(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-27T18:53:26.402Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2480331282,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.startBrowser(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": ": Login form using valid and invalid credentials",
+        "description": "",
+        "id": "form-authentication;:-login-form-using-valid-and-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 608716682,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1625968753,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "That I go to form authentication",
+            "match": {
+              "location": "FormAuthentication.go_to_auth_form()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 529899450,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter username \"tomsmith\" and \"SuperSecretPassword!\" and press Submit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tomsmith\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"SuperSecretPassword!\"",
+                  "offset": 32
+                }
+              ],
+              "location": "FormAuthentication.enter_invalid_username_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7542111,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should get correct \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"true\"",
+                  "offset": 21
+                }
+              ],
+              "location": "FormAuthentication.check_if_user_not_logged_in(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Form Authentication",
+    "description": "",
+    "id": "form-authentication",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/FormAuthentication.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,12 @@
+RunnerTest.class
+bindings\FormAuthentication.class
+cucumberTest\BasicAuthorizationPage.class
+cucumberTest\CheckboxesPage.class
+cucumberTest\FormAuthenticationPage.class
+bindings\AddRemoveElements.class
+bindings\Checkboxes.class
+cucumberTest\PageBtns.class
+bindings\Basket.class
+bindings\Setup.class
+bindings\BasicAuthorization.class
+cucumberTest\Base.class
