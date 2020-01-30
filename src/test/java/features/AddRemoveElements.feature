@@ -1,4 +1,4 @@
-@AddRemoveElements
+@FunctionalTest
 Feature: AddRemoveElements
 
 Scenario: Add remove elements http://the-internet.herokuapp.com/add_remove_elements/

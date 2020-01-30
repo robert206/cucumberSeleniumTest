@@ -1,3 +1,4 @@
+@FunctionalTest
 Feature: Form Authentication
 
   Scenario Outline: : Login form using valid and invalid credentials

@@ -1,3 +1,4 @@
+@FunctionalTest
 Feature: CheckBoxes
 
   Scenario:  CheckBoxes

@@ -48,7 +48,7 @@ public class AddRemoveElements {
         }
         // check that button appears 10 times -its stored into list via locator
         int size = pageBtns.deleteBtns.size();
-        assertEquals(size,11);
+        assertEquals(size,10);
     }
 
     @Then("Element should be added and Delete btn should be seen")

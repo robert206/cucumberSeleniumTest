@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/features"
         ,glue={"bindings"}
-        ,tags = {"not @avoid"}
+        ,tags = {"not @avoid","@FunctionalTest"}
         , plugin = {"json:target/cucumber.json", "html:target/cucumber-pretty"}
 )
 public class RunnerTest {

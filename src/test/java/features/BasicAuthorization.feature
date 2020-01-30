@@ -1,5 +1,5 @@
 @avoid
-@BasicAuthorization
+@FunctionalTest
 Feature: BasicAuthorization
 
   Scenario:  Basic auth in auth windows http://the-internet.herokuapp.com/basic_auth
