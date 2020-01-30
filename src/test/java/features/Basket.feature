@@ -1,4 +1,3 @@
-@run
 @Basket
 Feature: basket
   #shopping basket features
