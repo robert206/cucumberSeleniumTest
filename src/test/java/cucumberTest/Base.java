@@ -13,6 +13,7 @@ public class Base {
    public Base (WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver,10);
+
     }
 
 

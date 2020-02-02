@@ -4,14 +4,13 @@ import cucumberTest.VariousShowCasePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertFalse;
@@ -136,6 +135,44 @@ public class VariousShowCaseTest {
         assertTrue("Columns were not swapped",A.matches("A"));
         assertTrue("Columns were not swapped",B.matches("B"));
         TimeUnit.SECONDS.sleep(1);//test
+    }
+
+
+    @Given("dropdown page")
+    public void go_to_dropdown_page() {
+        driver = setup.getDriver();
+        driver.get(url);
+        showCasePage = new VariousShowCasePage(driver);
+        showCasePage.dropDownLink.click();
+        //wait.until(ExpectedConditions.urlMatches(url + "/dropdown"));
+        assertTrue("Not on dropdown page",driver.getPageSource().contains("Dropdown List"));
+        WebElement option2 = showCasePage.dropDownMenu.get(2);
+    }
+
+    @When("we select Option1")
+    public void select_option1() throws InterruptedException {
+        WebElement option1 = showCasePage.dropDownMenu.get(1);
+        option1.click();
+    }
+
+    @Then("Option1 should be selected")
+    public void option1_should_be_selected () {
+        WebElement option1 = showCasePage.dropDownMenu.get(1);
+        assertTrue("Option 1 is not selected",option1.isSelected());
+        assertTrue("Incorrect option text displayed",option1.getText().matches("Option 1"));
+    }
+
+    @When("we select Option2")
+    public void select_option2 () {
+        WebElement option2 = showCasePage.dropDownMenu.get(2);
+        option2.click();
+    }
+
+    @Then("Option2 should be selected")
+    public void option2_should_be_selected () {
+        WebElement option2 = showCasePage.dropDownMenu.get(2);
+        assertTrue("Option2 is not selected",option2.isSelected());
+        assertTrue("Incorrect option text displayed",option2.getText().matches("Option 2"));
     }
 
 

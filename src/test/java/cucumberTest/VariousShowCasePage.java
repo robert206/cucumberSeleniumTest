@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -64,6 +65,12 @@ public class VariousShowCasePage extends Base {
     @FindBy(xpath = "//*[@id='column-b']")
     public WebElement columnB;
 
+    /**Dropdown elements**/
+    @FindBy(xpath = "//a[@href='/dropdown']")
+    public WebElement dropDownLink;
+
+    @FindBy(xpath="//select[@id='dropdown']/option")
+    public List<WebElement> dropDownMenu;
 
    //check for dead links/images using http request
     public boolean verifyImage (WebElement image) {
@@ -91,6 +98,13 @@ public class VariousShowCasePage extends Base {
         }
         return foundAlert;
     }
+
+ /*   public boolean traverseDropdown (List<WebElement> dropDownMenu) {
+        Select select = new Select()
+        for (WebElement drop : dropDownMenu) {
+
+        }
+    }*/
 
 
 
