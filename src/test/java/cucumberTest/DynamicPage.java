@@ -24,4 +24,18 @@ public class DynamicPage extends Base {
     @FindBy(xpath = "//*[@id='checkbox-example']/button")
     public WebElement addRemoveBtn;
 
+    @FindBy(xpath ="//input[@type='text']")
+    public WebElement inputBox;
+
+    @FindBy(xpath = "//*[@id='input-example']/button")
+    public WebElement enableDisableBtn;
+
+    @FindBy(xpath ="//p[@id='message']")
+    public WebElement goneLabel;
+
+
+
+
+
+
 }

@@ -19,9 +19,11 @@ public class Setup {
     @Before
     public void startBrowser (Scenario scenario) {
         if (driver == null) {
+            //System.setProperty("chrome.driver", "chromedriver.exe");
             driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             wait = new WebDriverWait(driver,4);
+
         }
         System.out.println("------------------------------");
         System.out.println("Starting - " + scenario.getName());
