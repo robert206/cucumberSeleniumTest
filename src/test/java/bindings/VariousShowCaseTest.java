@@ -134,7 +134,6 @@ public class VariousShowCaseTest {
         System.out.println("A ="+ A + "B="+ B);
         assertTrue("Columns were not swapped",A.matches("A"));
         assertTrue("Columns were not swapped",B.matches("B"));
-        TimeUnit.SECONDS.sleep(1);//test
     }
 
 

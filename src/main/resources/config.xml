@@ -3,12 +3,12 @@
     <env name="Test01">
         <url>https://demoqa.com/</url>
         <browser>chrome</browser>
-        <browserRes>1920x1080</browserRes>
+        <browserRes>1920,1080</browserRes>
     </env>
     <env name="Test02">
         <url>http://the-internet.herokuapp.com/</url>
         <browser>chrome</browser>
-        <browserRes>1920x1080</browserRes>
+        <browserRes>1920,1080</browserRes>
     </env>
 
 </config>

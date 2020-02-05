@@ -1,5 +1,6 @@
 package cucumberTest;
 
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,6 +33,26 @@ public class DynamicPage extends Base {
 
     @FindBy(xpath ="//p[@id='message']")
     public WebElement goneLabel;
+
+
+    /** Dynamic loading **/
+    @FindBy(linkText = "Dynamic Loading")
+    public WebElement dynamicLoadLink;
+
+    @FindBy(xpath = "//a[@href ='/dynamic_loading/1']")
+    public WebElement dynamicLink1;
+
+    @FindBy(xpath = "//a[@href ='/dynamic_loading/2']")
+    public WebElement dynamicLink2;
+
+    @FindBy(xpath ="//*[@id='start']/button")
+    public WebElement startBtn;
+
+    @FindBy(xpath = "//*[@id='finish']/h4")
+    public WebElement helloWorld;
+
+
+
 
 
 

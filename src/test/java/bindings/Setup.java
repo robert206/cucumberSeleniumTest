@@ -1,13 +1,12 @@
 package bindings;
 
-import cucumberTest.Base;
+import cucumberTest.Configuration;
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.concurrent.TimeUnit;
 
 public class Setup {
@@ -15,11 +14,19 @@ public class Setup {
   private WebDriver driver;
   WebDriverWait wait;
 
+    public WebDriver getDriver() {
+        return driver;
+    }
+
+    public WebDriverWait getWait() {
+        return wait;
+    }
+
 
     @Before
     public void startBrowser (Scenario scenario) {
+
         if (driver == null) {
-            //System.setProperty("chrome.driver", "chromedriver.exe");
             driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             wait = new WebDriverWait(driver,4);
@@ -29,12 +36,6 @@ public class Setup {
         System.out.println("Starting - " + scenario.getName());
         System.out.println("------------------------------");
     }
-
-    public WebDriver getDriver() {
-        return driver;
-    }
-
-    public WebDriverWait getWait() { return wait; }
 
 
     @After
